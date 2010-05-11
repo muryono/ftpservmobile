@@ -1,0 +1,7 @@
+MIDlet-Version: 0.1.1
+MIDlet-Vendor: Paul White
+MIDlet-Jar-URL: FTPServMobile.jar
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-1: MyFirstMIDLClass,,ftpservmobile.FtpServer
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Name: FTP Server Mobile
