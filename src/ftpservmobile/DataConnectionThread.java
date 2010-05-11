@@ -203,7 +203,7 @@ public class DataConnectionThread extends Thread {
 			// I had the buffer size at 1024, but it wouldn't work 
 			// for loopback connections for some reason. I got error 10053.
 			// A value of 64 seems to work for all connections.
-			final int transferBufferSize = 64;
+			final int transferBufferSize = 2048;
 			
 			Date date = new java.util.Date();
 			long startTime = date.getTime();
@@ -272,7 +272,7 @@ public class DataConnectionThread extends Thread {
 		int bytesReceived = 0;
 		Log.put("About to receive file: " + path);
 		
-		int transferBufferSize = 64;
+		int transferBufferSize = 2048;
 		byte [] transferBuffer = new byte[transferBufferSize];
 		int bytesInBuffer;
 		
